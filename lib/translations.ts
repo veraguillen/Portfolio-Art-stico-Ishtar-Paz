@@ -18,8 +18,8 @@ export const translations = {
     // ── Manifiesto (home) ───────────────────────────────────────────────────
     manifiesto_label: "Manifiesto",
     manifiesto_featured: "Entre la carne y el abrazo, entre la furia de la memoria y la frialdad del monitor, entre el archivo que sangra y la escena que venga.",
-    manifiesto_p1: "El recorrido de mi trabajo habita la grieta donde la tecnología analógica se encuentra con el cuerpo disidente. Investigó el territorio híbrido donde el objeto personal se vuelve artefacto político y lo político se vuelve cuerpo, donde la escena es un espacio radical.",
-    manifiesto_p2: "Mi obra no sólo documenta la migración y la identidad; reivindica el derecho al delirio y a la revancha simbólica.",
+    manifiesto_p1: "El recorrido de mi trabajo habita la grieta donde la tecnología analógica se encuentra con el cuerpo disidente. Investigo el territorio híbrido donde el objeto personal se vuelve artefacto político y lo político se vuelve cuerpo, donde la escena es un espacio radical.",
+    manifiesto_p2: "Mi obra no solo documenta la migración y la identidad; reivindica el derecho al delirio y a la revancha simbólica.",
     manifiesto_p3: "Algunas claves para entrar en mi universo: el ruido visual como cicatriz; la mitología subvertida por el gesto performático; la escritura que devora al opresor; la tensión constante entre la fragilidad del recuerdo y la electricidad del presente.",
     manifiesto_p4: "",
 
