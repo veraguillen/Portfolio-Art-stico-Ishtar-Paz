@@ -1,0 +1,242 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Dark industrial palette — Ishtar Paz Pineda Portfolio */
+:root {
+  --background: #000000;
+  --foreground: #F5F5F5;
+  --card: #0f0f0f;
+  --card-foreground: #F5F5F5;
+  --popover: #0f0f0f;
+  --popover-foreground: #F5F5F5;
+  --primary: #F5F5F5;
+  --primary-foreground: #000000;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #F5F5F5;
+  --muted: #1a1a1a;
+  --muted-foreground: #888888;
+  --accent: #1a1a1a;
+  --accent-foreground: #F5F5F5;
+  --destructive: #8b3a3a;
+  --destructive-foreground: #F5F5F5;
+  --border: #222222;
+  --input: #1a1a1a;
+  --ring: #333333;
+  --chart-1: #c8c8c8;
+  --chart-2: #a0a0a0;
+  --chart-3: #787878;
+  --chart-4: #555555;
+  --chart-5: #333333;
+  --radius: 0rem;
+  --sidebar: #0f0f0f;
+  --sidebar-foreground: #F5F5F5;
+  --sidebar-primary: #F5F5F5;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #F5F5F5;
+  --sidebar-border: #222222;
+  --sidebar-ring: #333333;
+
+  /* Neon accent — EXCLUSIVAMENTE para hover e interacciones */
+  --neon: #08F7FE;
+
+  /* Earth tones industriales */
+  --burnt-umber: #3D2314;
+  --raw-sienna: #7A3B1E;
+  --slate: #555555;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist), 'Geist', sans-serif;
+  --font-serif: var(--font-instrument-serif), 'Georgia', serif;
+  --font-mono: var(--font-space-mono), 'Courier New', monospace;
+  --font-display: var(--font-fraunces), 'Georgia', serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-burnt-umber: var(--burnt-umber);
+  --color-raw-sienna: var(--raw-sienna);
+  --color-slate: var(--slate);
+  --color-neon: var(--neon);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    border-radius: 0 !important;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-geist), 'Geist', sans-serif;
+  }
+
+  /* Tipografía editorial: Instrument Serif en títulos — galería de archivo */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-instrument-serif), 'Georgia', serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    text-transform: none;
+  }
+}
+
+/* Film grain cinematográfico — overlay fixed global */
+.film-grain-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.028;
+  pointer-events: none;
+  z-index: 9998;
+  mix-blend-mode: overlay;
+}
+
+/* Film grain texture overlay (uso local en secciones) */
+.film-grain {
+  position: relative;
+}
+
+.film-grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.025;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Tipografía editorial — sin animaciones de parpadeo ─────────────────── */
+.glitch-text {
+  /* Clase preservada para compatibilidad; comportamiento editorial limpio */
+}
+
+/* ── Hero Glitch — RGB split contenido al texto ──────────────────────────── */
+.hero-glitch {
+  position: relative;
+  isolation: isolate;
+  cursor: default;
+}
+
+.hero-glitch:hover {
+  animation: hero-rgb-split 0.35s steps(3, end) infinite;
+}
+
+@keyframes hero-rgb-split {
+  0% {
+    text-shadow:
+      -2px 0 rgba(8, 247, 254, 0.8),
+       2px 0 rgba(255, 0, 85, 0.55);
+  }
+  33% {
+    text-shadow:
+       2px 0 rgba(8, 247, 254, 0.8),
+      -2px 0 rgba(255, 0, 85, 0.55);
+  }
+  66% {
+    text-shadow:
+      -1px 0 rgba(8, 247, 254, 0.6),
+       1px 0 rgba(255, 0, 85, 0.4);
+  }
+  100% {
+    text-shadow:
+       1px 0 rgba(8, 247, 254, 0.5),
+      -1px 0 rgba(255, 0, 85, 0.3);
+  }
+}
+
+/* ── Bordes CRT / Soldadura ──────────────────────────────────────────────── */
+/* Marco metálico oxidado: borde simple + outline offset + sin esquinas */
+.card-stage {
+  border: 1px solid var(--burnt-umber);
+  outline: 1px solid rgba(61, 35, 20, 0.28);
+  outline-offset: 3px;
+  border-radius: 0 !important;
+}
+
+/* ── Separador tierra/óxido ─────────────────────────────────────────────── */
+.divider-oxide {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--burnt-umber) 30%,
+    var(--burnt-umber) 70%,
+    transparent
+  );
+}
+
+/* Page transition */
+.page-transition {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Zoom on hover for images */
+.zoom-hover {
+  overflow: hidden;
+}
+
+.zoom-hover img {
+  transition: transform 0.5s ease-out;
+}
+
+.zoom-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--slate);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon);
+}
