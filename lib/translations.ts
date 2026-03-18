@@ -17,11 +17,11 @@ export const translations = {
 
     // ── Manifiesto (home) ───────────────────────────────────────────────────
     manifiesto_label: "Manifiesto",
-    manifiesto_featured: "Mi práctica nace del cuerpo como archivo político",
-    manifiesto_p1: "Soy una artista multidisciplinar hondureña que trabaja en la convergencia del teatro, la tecnología y los nuevos medios. Mi práctica nace del cuerpo como archivo político: de la memoria de las madres perdidas, de los golpes de estado vividos en carne propia, de los viajes en Kombi por Latinoamérica.",
-    manifiesto_p2: "Dirijo, escribo y performo desde el margen. Eso no es un dato biográfico: es el método.",
-    manifiesto_p3: "Trabajo con la metodología del biodrama porque creo que las historias reales tienen una textura que la ficción pura no puede replicar.",
-    manifiesto_p4: "Me interesa la escena como espacio de disidencia radical — donde lo íntimo se vuelve político y lo político se vuelve cuerpo.",
+    manifiesto_featured: "Entre la carne y el abrazo, entre la furia de la memoria y la frialdad del monitor, entre el archivo que sangra y la escena que venga.",
+    manifiesto_p1: "El recorrido de mi trabajo habita la grieta donde la tecnología analógica se encuentra con el cuerpo disidente. Investigó el territorio híbrido donde el objeto personal se vuelve artefacto político y lo político se vuelve cuerpo, donde la escena es un espacio radical.",
+    manifiesto_p2: "Mi obra no sólo documenta la migración y la identidad; reivindica el derecho al delirio y a la revancha simbólica.",
+    manifiesto_p3: "Algunas claves para entrar en mi universo: el ruido visual como cicatriz; la mitología subvertida por el gesto performático; la escritura que devora al opresor; la tensión constante entre la fragilidad del recuerdo y la electricidad del presente.",
+    manifiesto_p4: "",
 
     // ── Obras Destacadas (home) ─────────────────────────────────────────────
     obras_home_label: "Selección",
