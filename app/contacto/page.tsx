@@ -116,16 +116,16 @@ export default function ContactoPage() {
       <section className="py-20 px-6 md:px-12 lg:px-32 border-t border-[#3D2314]/40">
         <div className="max-w-2xl">
 
-          {/* Form title — Instrument Serif */}
+          {/* Form title — Cormorant Garamond Bold */}
           <motion.h2
-            className="font-serif text-3xl md:text-4xl text-foreground mb-2"
+            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 tracking-[-0.01em]"
             {...fadeUp(0)}
           >
             {t.contacto_form_title}
           </motion.h2>
 
           <motion.p
-            className="font-mono text-xs tracking-[0.28em] text-muted-foreground/50 mb-12"
+            className="font-mono text-xs tracking-[0.2em] text-[#08F7FE] mb-12"
             {...fadeUp(0.05)}
           >
             {t.contacto_form_subtitle}
@@ -163,7 +163,7 @@ export default function ContactoPage() {
                       required
                       disabled={status === "submitting"}
                       placeholder={t.contacto_placeholder_nombre}
-                      className="w-full bg-transparent border-0 border-b border-[#3D2314] focus:border-[#08F7FE] outline-none px-0 py-3 font-mono text-sm text-[#F5F5F5] placeholder:text-[#F5F5F5]/25 transition-colors duration-300 disabled:opacity-40"
+                      className="w-full bg-transparent border-0 border-b border-[#3D2314] focus:border-[#08F7FE] outline-none px-0 py-3 font-sans italic text-base text-[#F5F5F5] placeholder:text-[#F5F5F5]/30 placeholder:italic transition-colors duration-300 disabled:opacity-40"
                     />
                   </div>
 
@@ -181,7 +181,7 @@ export default function ContactoPage() {
                       required
                       disabled={status === "submitting"}
                       placeholder={t.contacto_placeholder_email}
-                      className="w-full bg-transparent border-0 border-b border-[#3D2314] focus:border-[#08F7FE] outline-none px-0 py-3 font-mono text-sm text-[#F5F5F5] placeholder:text-[#F5F5F5]/25 transition-colors duration-300 disabled:opacity-40"
+                      className="w-full bg-transparent border-0 border-b border-[#3D2314] focus:border-[#08F7FE] outline-none px-0 py-3 font-sans italic text-base text-[#F5F5F5] placeholder:text-[#F5F5F5]/30 placeholder:italic transition-colors duration-300 disabled:opacity-40"
                     />
                   </div>
                 </div>
@@ -200,7 +200,7 @@ export default function ContactoPage() {
                     rows={7}
                     disabled={status === "submitting"}
                     placeholder={t.contacto_placeholder_mensaje}
-                    className="w-full bg-transparent border-0 border-b border-[#3D2314] focus:border-[#08F7FE] outline-none px-0 py-3 font-mono text-sm text-[#F5F5F5] placeholder:text-[#F5F5F5]/25 transition-colors duration-300 resize-none disabled:opacity-40"
+                    className="w-full bg-transparent border-0 border-b border-[#3D2314] focus:border-[#08F7FE] outline-none px-0 py-3 font-sans italic text-base text-[#F5F5F5] placeholder:text-[#F5F5F5]/30 placeholder:italic transition-colors duration-300 resize-none disabled:opacity-40"
                   />
                 </div>
 
