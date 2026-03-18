@@ -1,12 +1,20 @@
 import type { Metadata, Viewport } from 'next'
-import { Space_Grotesk, Geist_Mono, Instrument_Serif, Bebas_Neue, Fraunces, Space_Mono } from 'next/font/google'
+import { Cormorant_Garamond, Space_Grotesk, Geist_Mono, Instrument_Serif, Bebas_Neue, Fraunces, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { LangProvider } from '@/contexts/lang-context'
 import './globals.css'
 
-// ── Cuerpo y navegación ────────────────────────────────────────────────────
+// ── Tipografía principal — Galería Editorial Solemne ──────────────────────
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: '--font-cormorant',
+  weight: ['300', '400', '600', '700'],
+  style: ['normal', 'italic'],
+});
+
+// ── Cuerpo y navegación (fallback) ────────────────────────────────────────
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: '--font-geist',
@@ -82,8 +90,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className={`${spaceGrotesk.variable} ${geistMono.variable} ${instrumentSerif.variable} ${bebas.variable} ${fraunces.variable} ${spaceMono.variable}`}>
-      <body className={`${spaceGrotesk.variable} ${instrumentSerif.variable} ${fraunces.variable} ${spaceMono.variable} font-sans antialiased bg-background text-foreground min-h-screen`}>
+    <html lang="es" className={`${cormorant.variable} ${spaceGrotesk.variable} ${geistMono.variable} ${instrumentSerif.variable} ${bebas.variable} ${fraunces.variable} ${spaceMono.variable}`}>
+      <body className={`${cormorant.variable} ${spaceGrotesk.variable} ${instrumentSerif.variable} ${fraunces.variable} ${spaceMono.variable} font-sans antialiased bg-background text-foreground min-h-screen`}>
         {/* Grain cinematográfico global — fixed, non-interactive */}
         <div className="film-grain-overlay" aria-hidden="true" />
         <LangProvider>
