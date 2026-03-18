@@ -25,10 +25,10 @@ export default function ObrasPage() {
     >
       {/* Header */}
       <header className="px-6 md:px-12 lg:px-32 mb-16">
-        <h1 className="font-display text-3xl md:text-6xl lg:text-8xl font-bold text-foreground mb-6">
+        <h1 className="font-display text-4xl md:text-6xl lg:text-8xl font-bold text-foreground mb-6">
           {t.obras_title}
         </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl leading-relaxed">
+        <p className="font-sans text-xl text-muted-foreground max-w-2xl leading-relaxed">
           {t.obras_desc}
         </p>
       </header>
@@ -97,13 +97,13 @@ export default function ObrasPage() {
                   <div className="absolute bottom-0 left-0 right-0 h-px bg-neon scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
 
                   <div className="absolute inset-0 flex flex-col justify-end p-5 md:p-6">
-                    <span className="font-mono text-xs tracking-[0.3em] uppercase text-foreground/50 mb-1">
+                    <span className="font-mono text-xs tracking-[0.3em] uppercase text-[#08F7FE]/60 mb-1">
                       {work.year} — {work.category}
                     </span>
-                    <h2 className="font-serif text-xl md:text-2xl lg:text-3xl text-foreground mb-1 text-balance group-hover:text-neon transition-colors duration-300">
+                    <h2 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground mb-1 text-balance group-hover:text-neon transition-colors duration-300 leading-tight">
                       {work.title}
                     </h2>
-                    <p className="font-mono text-xs text-foreground/60 tracking-[0.15em]">
+                    <p className="font-mono text-xs text-foreground/50 tracking-[0.15em]">
                       {work.venue}
                     </p>
                   </div>
@@ -117,7 +117,7 @@ export default function ObrasPage() {
       {/* Bottom Quote */}
       <footer className="px-6 md:px-12 lg:px-32 mt-24 text-center">
         <blockquote className="max-w-2xl mx-auto">
-          <p className="font-mono text-lg md:text-xl tracking-wide text-muted-foreground/60 leading-relaxed italic">
+          <p className="font-display text-xl md:text-2xl font-bold text-muted-foreground/60 leading-relaxed italic">
             {t.obras_quote}
           </p>
         </blockquote>

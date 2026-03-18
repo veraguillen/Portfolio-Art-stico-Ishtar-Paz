@@ -148,11 +148,7 @@ function TimelineItem({
 
       {/* Fecha */}
       <div className="md:col-span-3 pt-0.5">
-        <span
-          className={`font-mono text-xs tracking-[0.25em] uppercase ${
-            item.isCurrent ? "text-[#08F7FE]" : "text-muted-foreground"
-          }`}
-        >
+        <span className="font-mono text-sm tracking-[0.25em] uppercase text-[#08F7FE]">
           {item.period}
         </span>
         {item.isCurrent && (
@@ -167,17 +163,13 @@ function TimelineItem({
 
       {/* Contenido */}
       <div className="md:col-span-8">
-        <h3
-          className={`font-serif text-xl md:text-2xl mb-1 leading-snug font-normal ${
-            item.isCurrent ? "text-foreground" : "text-foreground"
-          }`}
-        >
+        <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-1 leading-snug">
           {item.role}
         </h3>
         <p className="font-mono text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">
           {item.organization}
         </p>
-        <p className="font-sans text-muted-foreground leading-relaxed text-base md:text-lg mb-5">
+        <p className="font-sans text-lg md:text-xl text-muted-foreground leading-relaxed mb-5">
           {item.description}
         </p>
         <ul className="space-y-1.5">
@@ -248,10 +240,10 @@ export default function ExperienciaPage() {
           {t.exp_title}
         </h1>
         <div className="max-w-2xl space-y-3">
-          <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+          <p className="font-sans text-xl md:text-2xl text-muted-foreground leading-relaxed">
             {t.exp_roles}
           </p>
-          <p className="text-muted-foreground/70 text-sm leading-relaxed max-w-xl">
+          <p className="font-sans text-lg text-muted-foreground/70 leading-relaxed max-w-xl">
             {t.exp_desc}
           </p>
           <div className="flex gap-6 pt-2 text-xs text-muted-foreground/50 tracking-widest uppercase">
@@ -311,13 +303,13 @@ export default function ExperienciaPage() {
                 className="grid grid-cols-12 gap-6 py-6 md:py-8"
               >
                 <div className="col-span-2 md:col-span-2">
-                  <span className="font-mono text-xs tracking-widest text-muted-foreground">
+                  <span className="font-mono text-sm tracking-widest text-[#08F7FE]">
                     {award.year}
                   </span>
                 </div>
                 <div className="col-span-10 md:col-span-10">
-                  <p className="text-foreground text-sm mb-1">{award.title}</p>
-                  <p className="text-muted-foreground/60 text-xs leading-relaxed">
+                  <p className="font-display text-xl md:text-2xl font-semibold text-foreground mb-1">{award.title}</p>
+                  <p className="font-sans text-base text-muted-foreground/70 leading-relaxed">
                     {award.detail}
                   </p>
                 </div>

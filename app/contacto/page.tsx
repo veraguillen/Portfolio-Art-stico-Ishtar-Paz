@@ -303,19 +303,19 @@ export default function ContactoPage() {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               <div>
-                <span className="font-mono text-[#3D2314] text-sm tracking-widest">01</span>
-                <h3 className="font-serif text-foreground mt-3 mb-2">{t.contacto_paso1_title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{t.contacto_paso1_desc}</p>
+                <span className="font-display text-5xl md:text-6xl font-bold text-[#3D2314]/60 leading-none">01</span>
+                <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground mt-4 mb-2">{t.contacto_paso1_title}</h3>
+                <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed">{t.contacto_paso1_desc}</p>
               </div>
               <div>
-                <span className="font-mono text-[#3D2314] text-sm tracking-widest">02</span>
-                <h3 className="font-serif text-foreground mt-3 mb-2">{t.contacto_paso2_title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{t.contacto_paso2_desc}</p>
+                <span className="font-display text-5xl md:text-6xl font-bold text-[#3D2314]/60 leading-none">02</span>
+                <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground mt-4 mb-2">{t.contacto_paso2_title}</h3>
+                <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed">{t.contacto_paso2_desc}</p>
               </div>
               <div>
-                <span className="font-mono text-[#3D2314] text-sm tracking-widest">03</span>
-                <h3 className="font-serif text-foreground mt-3 mb-2">{t.contacto_paso3_title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{t.contacto_paso3_desc}</p>
+                <span className="font-display text-5xl md:text-6xl font-bold text-[#3D2314]/60 leading-none">03</span>
+                <h3 className="font-display text-xl md:text-2xl font-semibold text-foreground mt-4 mb-2">{t.contacto_paso3_title}</h3>
+                <p className="font-sans text-base md:text-lg text-muted-foreground leading-relaxed">{t.contacto_paso3_desc}</p>
               </div>
             </div>
           </motion.div>
