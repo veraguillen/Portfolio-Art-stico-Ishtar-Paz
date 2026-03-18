@@ -97,7 +97,8 @@ export default function HomePage() {
             </HeroGlitch>
 
             <motion.p
-              className="font-mono text-xs md:text-sm tracking-[0.25em] uppercase text-muted-foreground mb-4"
+              className="font-mono tracking-[0.2em] uppercase text-muted-foreground mb-4 max-w-2xl mx-auto leading-relaxed"
+              style={{ fontSize: '0.7rem' }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.0, delay: 1.2, ease: "easeOut" }}
@@ -106,7 +107,8 @@ export default function HomePage() {
             </motion.p>
 
             <motion.p
-              className="font-sans text-sm md:text-base text-foreground/70 max-w-2xl mx-auto italic"
+              className="font-sans text-muted-foreground/70 max-w-2xl mx-auto italic"
+              style={{ fontSize: '1rem' }}
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 1.6, ease: [0.25, 0.1, 0.25, 1] }}
