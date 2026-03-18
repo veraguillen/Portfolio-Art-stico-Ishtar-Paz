@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono, Instrument_Serif, Bebas_Neue, Fraunces, Space_Mono } from 'next/font/google'
+import { Space_Grotesk, Geist_Mono, Instrument_Serif, Bebas_Neue, Fraunces, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
@@ -7,9 +7,10 @@ import { LangProvider } from '@/contexts/lang-context'
 import './globals.css'
 
 // ── Cuerpo y navegación ────────────────────────────────────────────────────
-const geist = Geist({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: '--font-geist',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 // ── Metadatos, etiquetas, UI técnica ──────────────────────────────────────
@@ -81,8 +82,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className={`${geist.variable} ${geistMono.variable} ${instrumentSerif.variable} ${bebas.variable} ${fraunces.variable} ${spaceMono.variable}`}>
-      <body className={`${geist.variable} ${instrumentSerif.variable} ${fraunces.variable} ${spaceMono.variable} font-sans antialiased bg-background text-foreground min-h-screen`}>
+    <html lang="es" className={`${spaceGrotesk.variable} ${geistMono.variable} ${instrumentSerif.variable} ${bebas.variable} ${fraunces.variable} ${spaceMono.variable}`}>
+      <body className={`${spaceGrotesk.variable} ${instrumentSerif.variable} ${fraunces.variable} ${spaceMono.variable} font-sans antialiased bg-background text-foreground min-h-screen`}>
         {/* Grain cinematográfico global — fixed, non-interactive */}
         <div className="film-grain-overlay" aria-hidden="true" />
         <LangProvider>
