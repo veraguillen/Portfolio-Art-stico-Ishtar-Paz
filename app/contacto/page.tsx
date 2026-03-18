@@ -118,18 +118,11 @@ export default function ContactoPage() {
 
           {/* Form title — Cormorant Garamond Bold */}
           <motion.h2
-            className="font-display text-3xl md:text-4xl font-bold text-foreground mb-2 tracking-[-0.01em]"
+            className="font-display text-4xl md:text-5xl font-bold text-foreground mb-10 tracking-[-0.01em]"
             {...fadeUp(0)}
           >
             {t.contacto_form_title}
           </motion.h2>
-
-          <motion.p
-            className="font-mono text-xs tracking-[0.2em] text-[#08F7FE] mb-12"
-            {...fadeUp(0.05)}
-          >
-            {t.contacto_form_subtitle}
-          </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 12 }}
@@ -208,7 +201,7 @@ export default function ContactoPage() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className={`font-mono font-bold text-xs tracking-[0.3em] uppercase border px-10 py-4 transition-colors duration-300 disabled:cursor-not-allowed ${
+                    className={`font-display font-bold text-xl border px-10 py-4 transition-colors duration-300 disabled:cursor-not-allowed ${
                       status === "submitting"
                         ? "border-[#08F7FE]/50 text-[#08F7FE]/70"
                         : "border-[#08F7FE] text-[#08F7FE] hover:bg-[#08F7FE]/5"
