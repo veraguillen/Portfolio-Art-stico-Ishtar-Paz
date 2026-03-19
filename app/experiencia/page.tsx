@@ -7,14 +7,14 @@ import { useLang } from "@/contexts/lang-context"
 const timeline = [
   {
     period: "2025 — Actualidad",
-    role: "Maestra de Teatro Itinerante",
-    organization: "Proyecto Autónomo / UNA, Argentina",
+    role: "Maestría en Teatro de Objetos, Interactividad y Nuevos Medios",
+    organization: "UNA — Universidad Nacional de las Artes, Argentina",
     description:
-      "Práctica pedagógica en territorio y cursada de la Especialización en Teatro de Objetos, Interactividad y Nuevos Medios (UNA).",
+      "En curso. Investigación sobre la convergencia entre el objeto, el cuerpo y las nuevas tecnologías.",
     highlights: [
-      "Especialización en Teatro de Objetos, Interactividad y Nuevos Medios",
+      "Teatro de Objetos e Interactividad",
       "UNA — Universidad Nacional de las Artes",
-      "Pedagogía en territorio",
+      "Nuevas tecnologías aplicadas a la escena",
     ],
     isCurrent: true,
   },
@@ -23,11 +23,11 @@ const timeline = [
     role: "Asistente Pedagógica en Teatro Performativo",
     organization: "UNA — Universidad Nacional de las Artes, Argentina",
     description:
-      "Asistencia pedagógica en el área de Teatro Performativo y formación en la Especialización en Teatro de Objetos, Interactividad y Nuevos Medios.",
+      "Asistencia docente en el área de Teatro Performativo y formación técnica.",
     highlights: [
       "Teatro Performativo",
-      "Especialización en Teatro de Objetos",
-      "Interactividad y Nuevos Medios",
+      "Asistencia docente",
+      "Formación técnica escénica",
     ],
     isCurrent: false,
   },
