@@ -107,11 +107,6 @@ const awards = [
     detail: "EEUU, México y Nueva York — por Fragmentos de Existencia",
   },
   {
-    year: "2024",
-    title: "Selección Festival Ícaro",
-    detail: "Por la obra documental Huellas",
-  },
-  {
     year: "2022–2023",
     title: "Fondos y Subvenciones",
     detail: "MDL (Fondo CAMY) y MUA (Plataforma PAKAS)",
